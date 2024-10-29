@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block title %}Network Scanner{% endblock %}
+
+{% block content %}
+<h2>Network Scanner</h2>
+    <div class="card">
+        <form action="{{ url_for('network_scanner') }}" method="POST">
+        <label for="target_ip">Target IP Address (e.g., 192.168.1.1):</label>
+        <input type="text" id="target_ip" name="target_ip" placeholder="e.g., 192.168.1.1" required>
+        
+        <label for="port_selection">Port Selection:</label>
+        <select id="port_selection" name="port_selection" required>
+            <option value="Common Ports">Common Ports</option>
+            <option value="All Ports">All Ports</option>
+            <option value="Custom">Custom (Specify in List)</option>
+        </select>
+        
+        <label for="port_list">List of Ports (comma-separated, if Custom):</label>
+        <input type="text" id="port_list" name="port_list" placeholder="e.g., 80, 443, 22">
+
+        <input type="checkbox" id="authorized" name="authorized" required>
+        <label for="authorized">I am authorized to scan this target and I agree with the <a href="#">Terms of Service</a>.</label>
+        
+        <button type="submit">Start Scan</button>
+    </form>
+</div>
+{% 
+endblock %}

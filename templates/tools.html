@@ -1,0 +1,20 @@
+<!-- templates/tools.html -->
+{% extends 'base.html' %}
+
+{% block title %}Tools{% endblock %}
+
+{% block content %}
+<div class="tools-container">
+    <h2>Available Tools</h2>
+    <div class="image-box">
+        <a href="{{ url_for('network_scanner') }}" class="tool-image-link">
+            <img src="/static/images/1_2d.jpg" alt="Network Scanner" class="tool-image">
+            <h3>Network Scanner</h3>
+        </a>
+        <a href="{{ url_for('website_scanner') }}" class="tool-image-link">
+            <img src="/static/images/web.jpg" alt="Website Scanner" class="tool-image">
+            <h3>Website Scanner</h3>
+        </a>
+    </div>
+</div>
+{% endblock %}

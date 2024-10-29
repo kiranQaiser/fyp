@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block title %}Website Scanner{% endblock %}
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Scanner</title>
+    
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h2>Website Vulnerability Scanner</h2>
+        </header>
+        <div class="scanner-wrapper">
+            <div class="scanner-card">
+                <form action="{{ url_for('website_scanner') }}" method="POST" id="scanForm">
+                    <label for="target_url">Target URL:</label>
+                    <input type="url" id="target_url" name="target_url" placeholder="https://example.com" required>
+                    <button type="submit">Start Scan</button>
+                </form>
+            </div>
+            
+        </div>
+    </div>
+
+    <script>
+        // JavaScript to handle form submission
+        document.getElementById('scanForm').addEventListener('submit', function(event) {
+            const urlField = document.getElementById('target_url');
+            if (!urlField.value.startsWith('http://') && !urlField.value.startsWith('https://')) {
+                alert('Please enter a valid URL starting with http:// or https://');
+                event.preventDefault(); // Prevent form submission
+            }
+        });
+    </script>
+</body>
+</html>
+{% endblock %}
