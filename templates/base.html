@@ -4,14 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='navbar.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/navbar.css') }}">
     <!-- Inside your base.html in the <head> section -->
-    <link rel="stylesheet" href="{{ url_for('static', filename='3d-cards.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/tools.css') }}">
+
 
     
     {% if request.endpoint == 'home' %}
-        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='home.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/home.css') }}">
     {% endif %}
     
     <title>{% block title %}Pentest Website{% endblock %}</title>

@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
+    margin: 30 auto;
     padding: 0;
     box-sizing: border-box;
 }
@@ -18,7 +18,7 @@ p {
     justify-content: space-between;
     align-items: center;
     padding: 40px;
-    background: #ecf0f1;
+    background: #161617;
     text-align: left;
     border-bottom: 1px solid #bdc3c7;
     margin-top: 100px; /* Adjust this value to push content down */
@@ -50,7 +50,7 @@ p {
 
 .features-section {
     padding: 40px;
-    background-color: #f4f4f4;
+    background-color: #1c1a1a;
 }
 
 .features-container {
@@ -63,7 +63,7 @@ p {
     flex: 1 1 300px;
     margin: 20px;
     padding: 20px;
-    background: #fff;
+    background: #252323;
     border: 1px solid #ddd;
     border-radius: 10px;
     text-align: center;
@@ -79,7 +79,7 @@ p {
 
 .testimonials-section {
     padding: 40px;
-    background-color: #ecf0f1;
+    background-color: #2a2d2e;
     text-align: center;
 }
 
@@ -93,7 +93,7 @@ p {
     max-width: 600px;
     margin: 20px;
     padding: 20px;
-    background-color: #fff;
+    background-color: #1f1c1c;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }

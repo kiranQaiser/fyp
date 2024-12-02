@@ -1,9 +1,9 @@
 import sys
 
-def simulate_web_scan(url):
-    print(f"Scanning {url} for vulnerabilities...")
-    print("Found vulnerabilities: SQL Injection, XSS")  # Dummy output
+if len(sys.argv) != 2:
+    print("Usage: python web_scanner.py <target_url>")
+    sys.exit(1)
 
-if __name__ == "__main__":
-    url = sys.argv[1]
-    simulate_web_scan(url)
+target_url = sys.argv[1]
+print(f"Scanning {target_url}...")
+print("No vulnerabilities found. This is a dummy scanner output.")

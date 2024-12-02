@@ -35,7 +35,7 @@ textarea {
 
 /* Buttons */
 .btn {
-    background: #301b3a;
+    background: #0e012e;
     color: white;
     padding: 10px 20px; 
     border: none;
@@ -257,7 +257,7 @@ body {
 .container {
     width: 90%;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 50 auto;
     padding: 20px;
 }
 
@@ -341,3 +341,4 @@ header {
         margin: 0 10px;
     }
 }
+
